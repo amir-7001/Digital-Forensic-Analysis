@@ -53,12 +53,12 @@ I targeted the lsass.exe memory space and LSA secrets to recover the user's plai
 ![](<Images/Screenshot 2026-03-06 025105.png>)
 Forensic Note: The password CTF{...} was successfully recovered, indicating that the attacker had already achieved data exfiltration capabilities.
 
-. Infection Vector Analysis (Option A)
+. Infection Vector Analysis 
 I reconstructed the user's browser history to determine how the malware first entered the system.
-![](<Images/Screenshot 2026-03-06 025354.png>)
+![](<Images/Screenshot 2026-03-06 025533.png>)
 Forensic Note: The user navigated to a specific download URL, confirming the infection was a result of a Drive-by Download or social engineering.
 
-8. Master File Table (MFT) Timeline 
+. Master File Table (MFT) Timeline 
 I parsed the MFT to establish a definitive timeline of when the malicious file was written to the disk.
 ![](<Images/Screenshot 2026-03-06 025938.png>)
 Forensic Note: The timestamp matches the network connection timing, providing a cohesive timeline of execution and compromise.
